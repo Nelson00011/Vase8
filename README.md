@@ -14,8 +14,23 @@
 
 
 ## Resources:
-- Blackbird.AI is focusing on Kursk Incursion (2024):
-    - **Compass Context** to verify and contextualize the information you see [online](https://blackbird.ai/compass-context/)
+- **Windsurf** with cascade can be downloaded [here](https://windsurf.com/):
+    - **Cascade** button can be found using the small `w` and uses localhost:8000
+    - Terminal Run Commands: 
+        Python
+        ```
+        # Python 3
+        python -m http.server 8000
+        ```
+        Node.js
+        ```
+        npx http-server -p 8000
+        ```
+
+        PHP
+        ```
+        npx http-server -p 8000
+        ```
 
 
 ## Contact:
