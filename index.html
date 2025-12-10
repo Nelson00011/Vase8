@@ -173,17 +173,14 @@
 
             // Draw food
             ctx.fillStyle = '#ff4444';
-            ctx.beginPath();
-            const foodSize = gridSize * 0.8;
-            const foodOffset = (gridSize - foodSize) / 2;
-            ctx.roundRect(
-                foodX * gridSize + foodOffset, 
-                foodY * gridSize + foodOffset, 
-                foodSize, 
-                foodSize, 
-                5
+            // Draw food (apple emoji)
+            ctx.font = `${gridSize}px Arial`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('🍎', 
+                foodX * gridSize + gridSize/2, 
+                foodY * gridSize + gridSize/2
             );
-            ctx.fill();
 
             // Draw snake
             snake.forEach((segment, index) => {
@@ -241,6 +238,12 @@
             }
         }
 
+        function getRandomColor() {
+            // Generate a light pastel color
+            const hue = Math.floor(Math.random() * 360);
+            return `hsl(${hue}, 70%, 95%)`;
+        }
+
         function placeFood() {
             let validPosition = false;
             let newFoodX, newFoodY;
@@ -255,6 +258,9 @@
             
             foodX = newFoodX;
             foodY = newFoodY;
+            
+            // Change background color when food is placed
+            document.body.style.backgroundColor = getRandomColor();
         }
 
         function checkCollision() {
@@ -294,6 +300,9 @@
             window.requestAnimationFrame(drawGame);
         }
 
+        // Set initial background color
+        document.body.style.backgroundColor = getRandomColor();
+        
         // Start the game
         placeFood();
         window.requestAnimationFrame(drawGame);
