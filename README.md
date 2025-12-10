@@ -19,12 +19,7 @@
 ```
 
 - Initial windsurf casscade AI assistant & install dependenies(localhost:8000):
-    - Must be `cd`'d into frontend/client for install
-```
-
-- Initial install dependenies(localhost:3000):
-    - Must be `cd`'d into frontend/client for install
-    - MUI, `react-router-dom`, redux, formik, etc... (see resources)
+    - Must be `cd`'d into frontend/client for install(see resources)
     ```
     npx http-server -p 8000
     ```
@@ -58,7 +53,7 @@
         npx http-server -p 8000
         ```
     - **[RAG](https://aws.amazon.com/what-is/retrieval-augmented-generation/)** Retrieval-Augmented Generation is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response.
-    
+
 #### **helpful hint:** 
 - Certain `emoji's` work better for applications, do not function with this set-up.
 
