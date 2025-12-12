@@ -23,8 +23,6 @@
     ```
     npx http-server -p 8000
     ```
-- [Context Awareness](https://research.ibm.com/publications/context-awareness-a-practitioners-perspective) make sure the AI is grounded in relevant explicit knowledge 
-- [Human Action tracking](https://arxiv.org/abs/2507.18623#:~:text=The%20ability%20to%20adapt%20to,available%20at%20this%20https%20URL.) makes sure the AI is grounded in the relevant implicit information about the task at hand. 
 
 ## Notes:
 #### Name | [Company](link)
@@ -53,6 +51,9 @@
         npx http-server -p 8000
         ```
     - **[RAG](https://aws.amazon.com/what-is/retrieval-augmented-generation/)** Retrieval-Augmented Generation is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response.
+
+- [Context Awareness](https://research.ibm.com/publications/context-awareness-a-practitioners-perspective) make sure the AI is grounded in relevant explicit knowledge 
+- [Human Action tracking](https://arxiv.org/abs/2507.18623#:~:text=The%20ability%20to%20adapt%20to,available%20at%20this%20https%20URL.) makes sure the AI is grounded in the relevant implicit information about the task at hand. 
 
 #### **helpful hint:** 
 - Certain `emoji's` work better for applications, do not function with this set-up.
